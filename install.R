@@ -1,0 +1,27 @@
+### install regular packages
+install.packages("archdata")
+install.packages("NetLogoR")
+install.packages("geojsonio")
+install.packages("protolite")
+install.packages("tidyr")
+install.packages("dplyr")
+install.packages("ggplot2")
+install.packages("igraph")
+install.packages("jsonlite")
+install.packages("RCurl")
+install.packages("curl")
+install.packages("DBI")
+install.packages("RSQLite")
+install.packages("sf")
+install.packages("terra")
+install.packages("lattice")
+install.packages("gridExtra")
+install.packages("XML")
+
+### install bioconductor packages
+# install.packages("BiocManager")
+# BiocManager::install("package")
+
+### install GitHub packages (tag = commit, branch or release tag)
+# install.packages("devtools")
+# devtools::install_github("user/repo", ref = "tag")

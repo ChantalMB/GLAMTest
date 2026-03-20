@@ -1,0 +1,56 @@
+name: odate
+channels:
+  - conda-forge
+dependencies:
+  - python=3.12.11
+  - pip
+  # R base and the R kernel for Jupyter
+  # - r-base
+  # - r-irkernel
+  # Python packages
+  - gdal
+  - matplotlib
+  - pandas
+  - numpy
+  - networkx
+  - scikit-learn
+  - scikit-image
+  - seaborn
+  - tqdm
+  - pillow
+  - scipy
+  - ipython
+  - imageio
+  - laspy
+  - datashader
+  - rasterio
+  - pytesseract
+  - scrapy
+  - fiona
+  - pysal
+  - shapely
+  - descartes
+  - geopandas
+  - ipywidgets
+  - pygeoprocessing
+  - py-opencv
+  - bokeh
+  - pygments
+  - ipyleaflet
+  - pip:
+    # custom JupyterLab extensions
+    - ./odate-extensions/jlab_cell_run-0.1.0-py3-none-any.whl
+    - ./odate-extensions/jlab_solarised_dark_theme-0.2.0-py3-none-any.whl
+    - ./odate-extensions/jlab_solarised_light_theme-0.2.0-py3-none-any.whl
+    # pip packages
+    - plodlib @ git+https://github.com/p-lod/plodlib.git
+    - gpt_2_simple
+    - tracery
+    - sqlitebiter
+    - img2table
+    - miditime
+    - mesa
+    - lazrs
+    - torch
+    - torchvision
+    - tensorflow
