@@ -22,15 +22,15 @@ jobs:
         python -m pip install jupytext
         python -m pip install jupyterlab
 
-    - name: Convert README to index.ipynb
-      run: |
-        sed '/^<\!-- START RUN INFO/,/^<\!-- END RUN INFO/d;' README.md > index.md
-        jupytext -k python3 --to ipynb index.md
+    # - name: Convert README to index.ipynb
+    #   run: |
+    #     sed '/^<\!-- START RUN INFO/,/^<\!-- END RUN INFO/d;' README.md > index.md
+    #     jupytext -k python3 --to ipynb index.md
 
-    - name: Commit index.ipynb
-      uses: EndBug/add-and-commit@v7.1.0
-      with:
-          add: index.ipynb
+    # - name: Commit index.ipynb
+    #   uses: EndBug/add-and-commit@v7.1.0
+    #   with:
+    #       add: index.ipynb
 
     - name: update jupyter dependencies with repo2docker
       uses: jupyterhub/repo2docker-action@master
